@@ -13,9 +13,10 @@ const addNew = () => {
 
     try {
         const url = new URL(newLinkUrl.value);
-        links.value.push(newLinkUrl.value);
+        links.push(newLinkUrl.value);
         newLinkUrl.value = '';
     } catch (e) {
+        console.error(e);
         alert(e.message);
         return false;
     }
@@ -23,7 +24,7 @@ const addNew = () => {
 
 const storeLinks = () => {
     addNew();
-    emits('change', links.value);
+    emits('change', links);
     editMode.value = false;
 };
 </script>
@@ -103,3 +104,10 @@ const storeLinks = () => {
         </div>
     </div>
 </template>
+<style lang="scss" scoped>
+.link-list {
+    > li {
+        word-break: break-all;
+    }
+}
+</style>
