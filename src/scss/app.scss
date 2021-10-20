@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@import 'variables';
+
+@import 'bootstrap/scss/bootstrap';
+
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+.mb-app {
+    .header {
+        .search {
+            width: 50%;
+        }
+    }
+
+    .navbar-brand {
+        text-align: center;
+        min-width: 260px;
+    }
+}
+
+@import 'animations';
+
+@import 'product-list';
+@import 'movie-info';
+
+@include media-breakpoint-down(md) {
+    .mb-app {
+        .header {
+            .search {
+                order: 3;
+                width: auto;
+                flex-basis: 100%;
+                margin-top: 1rem;
+            }
+
+            .user-box {
+                span {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+
+        .navbar-brand {
+            min-width: 0;
+
+            img {
+                margin: 1 !important;
+            }
+            span {
+                font-size: 1rem;
+            }
+        }
+
+        .footer {
+            .btn {
+                font-size: 0;
+            }
+        }
+    }
+}

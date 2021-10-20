@@ -1,0 +1,13 @@
+node_modules
+.DS_Store
+dist-ssr
+dist/*
+*.local
+*.code-workspace
+.env
+.vscode
+.firebase
+.firebaserc
+firebase.json
+firestore.*
+package-lock.json

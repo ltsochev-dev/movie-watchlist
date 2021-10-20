@@ -1,0 +1,22 @@
+// Body
+// $body-bg: #221f1f;
+// $body-color: #fff;
+$body-bg: #36393f;
+$body-color: #dcddde;
+
+$dark: #2f3136;
+$darker: #202225;
+$yellow: #e4d804;
+
+/*--header-primary: #fff;
+--header-secondary: #b9bbbe;*/
+
+// Typography
+$font-family-sans-serif: 'Montserrat', system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial,
+    'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family-serif: 'PT Serif', serif;
+
+$link-color: $yellow;
+$link-decoration: none;
+$link-hover-color: $body-color;
