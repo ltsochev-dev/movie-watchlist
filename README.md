@@ -9,6 +9,10 @@ It is a very rushed proof-of-concept project that I made for myself to check out
 
 You are free to use any parts of the code as you see fit.
 
+## Demo
+
+A working demo could be found here. You'll have to sign with your google account for the time being. https://movie-backlog-aee61.web.app/
+
 ## Installation
 
 Before installation, keep in mind that you need to have a Firebase account credentials.
@@ -55,5 +59,6 @@ npm run deploy
 ### ToDo's
 
 - Route change transition animations
+- Indication that a movie has been seen already
 - Preloaders for when we're loading remote information
 - Add more authentication providers
